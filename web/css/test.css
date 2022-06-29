@@ -1,0 +1,146 @@
+/* declarer une police perso */
+body
+{
+	background-color: goldenrod;
+	/* background-image: url("../images/ManO.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center; */
+	background-image: url(../images/logo.png);
+	/* background-attachment: fixed; */
+	color: rgb(170, 255, 0);
+}
+#conteneur
+{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+header
+{
+	width: 60%;
+	min-width: 400px;
+	max-width: 800px;
+	margin: auto;
+	padding-bottom: 80px;
+	height: 60%;
+	overflow: auto;
+}
+nav
+{
+	width: 20%;
+	height: 100%;
+	min-width: 200px;
+	max-width: 300px;
+	word-wrap: normal;
+}
+@font-face 
+{
+	font-family: '/acab/alex-brush/AlexBrush-Regular.ttf';
+	src: url('/acab/alex-brush/AlexBrush-Regular.ttf') format('ttf');
+}
+*
+{
+	font-family: serif, 'Courier New', Courier, monospace;
+	text-align: center;
+}
+ol ,ul ,figcaption, div
+{
+	padding-top: 10px;
+	font-size: 1.2em;
+	background-image: url("../images/scroll.webp");
+	background-attachment: scroll;
+	border-bottom: 4px brown solid;
+	border-right: 4px brown solid;
+	border-left: 4px rgb(225, 50, 50) solid;
+	border-top: 4px rgb(225, 50, 50) solid;
+	box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.6) ;
+	text-shadow: 3px 3px 4px black;
+	border-radius: 15px;
+}
+img
+{
+	border: 2px solid brown;
+	box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.6) ;
+}
+.gifflottant
+{
+	float: inline-end;
+}
+.dessous
+{
+	clear: both;
+}
+
+.mouette
+{
+	color: rgb(165, 94, 0);
+}
+h1
+{
+	border-bottom: 8px brown groove;
+	border-right: 8px brown groove;
+	border-left: 8px rgb(225, 50, 50) groove;
+	border-top: 8px rgb(225, 50, 50) groove;
+	box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.6);	
+	background-image: url("../images/bois.jpeg");
+	background-attachment: fixed;
+	text-decoration: underline;
+	font-size: 3em;
+	font-style: oblique;
+	font-weight: bolder;
+	color: rgb(206, 140, 55);
+}
+h2
+{
+	margin: auto;
+	margin-bottom: 10px;
+	width: 40%;
+	height: 40%;
+	border-bottom: 8px brown groove;
+	border-right: 8px brown groove;
+	border-left: 8px rgb(225, 50, 50) groove;
+	border-top: 8px rgb(225, 50, 50) groove;
+	box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.6);	
+	background-image: url("../images/bois.jpeg");
+	background-attachment: fixed;
+	font-size: 1.6em;
+	font-style: italic;
+	font-weight: bold;
+	color: rgb(206, 140, 55);
+}
+div strong
+{
+	color: rgb(165, 94, 0);
+}
+nav li
+{
+	text-align: left;
+	text-decoration: underline;
+}
+
+a[title]
+{
+	color: rgb(222, 24, 10);
+}
+a:hover
+{
+	text-decoration: underline;
+	color: green;
+	font-style: italic;
+}
+/* a:active
+{
+	text-decoration: underline;
+	color: #AAA;
+}
+a:focus
+{
+	text-decoration: underline;
+	color: #AAA;
+} */
+nav a:visited
+{
+	color: rgb(170, 255, 0);
+}
