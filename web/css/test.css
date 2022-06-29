@@ -15,7 +15,7 @@ body
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	justify-content: flex-end;
+	justify-content: center;
 }
 header
 {
@@ -35,6 +35,10 @@ nav
 	max-width: 300px;
 	word-wrap: normal;
 }
+/* .nav
+{
+	align-self: flex-end;
+} */
 @font-face 
 {
 	font-family: '/acab/alex-brush/AlexBrush-Regular.ttf';
@@ -45,9 +49,10 @@ nav
 	font-family: serif, 'Courier New', Courier, monospace;
 	text-align: center;
 }
-ol ,ul ,figcaption, div
+section, nav, footer
 {
 	padding-top: 10px;
+	margin-bottom: 20px;
 	font-size: 1.2em;
 	background-image: url("../images/scroll.webp");
 	background-attachment: scroll;
