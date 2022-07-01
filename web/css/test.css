@@ -1,19 +1,19 @@
 /* declarer une police perso */
 body
 {
-	background-color: goldenrod;
-	/* background-image: url("../images/ManO.jpg");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center; */
-	background-image: url(../images/logo.png);
-	/* background-attachment: fixed; */
-	color: rgb(170, 255, 0);
+	background-color: rgb(18, 109, 158);
+	background-image: url(../images/floating_seagull.png);
+	font-family: serif, 'Courier New', Courier, monospace;
+	/* text-align: center; */
+}
+ul, ol
+{
+	list-style-type: none;
 }
 #conteneur
 {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
 }
@@ -23,46 +23,93 @@ header
 	min-width: 400px;
 	max-width: 800px;
 	margin: auto;
-	padding-bottom: 80px;
-	height: 60%;
+	padding-bottom: 40px;
 	overflow: auto;
 }
-nav
+.up_arrow
 {
-	width: 20%;
-	height: 100%;
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	nav-down: auto;
+}
+.nav
+{
+	font-size: 1.4em;
+	padding-top: 10px;
+	background-image: url("../images/sea.webp");
+	background-attachment: scroll;
+	background-position: 20% 20%;
+	/* border-bottom: 4px brown solid; */
+	border-right: 4px rgb(120, 26, 0) solid;
+	border-left: 4px rgb(120, 26, 0) solid;
+	border-top: 4px rgb(120, 26, 0) solid;
+	box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.6) ;
+	text-shadow: 2px 2px 3px black;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
 	min-width: 200px;
-	max-width: 300px;
+	width: 90%;
 	word-wrap: normal;
 }
-/* .nav
+section
 {
-	align-self: flex-end;
-} */
-@font-face 
-{
-	font-family: '/acab/alex-brush/AlexBrush-Regular.ttf';
-	src: url('/acab/alex-brush/AlexBrush-Regular.ttf') format('ttf');
-}
-*
-{
-	font-family: serif, 'Courier New', Courier, monospace;
+	color: greenyellow;
 	text-align: center;
-}
-section, nav, footer
-{
-	padding-top: 10px;
-	margin-bottom: 20px;
 	font-size: 1.2em;
-	background-image: url("../images/scroll.webp");
+	background-image: url("../images/treasure\ map.jpeg");
+	background-position: 30% 30%;
 	background-attachment: scroll;
-	border-bottom: 4px brown solid;
-	border-right: 4px brown solid;
-	border-left: 4px rgb(225, 50, 50) solid;
-	border-top: 4px rgb(225, 50, 50) solid;
+	border-bottom: 4px  rgb(120, 26, 0) solid;
+	border-right: 4px rgb(120, 26, 0) solid;
+	border-left: 4px rgb(120, 26, 0) solid;
+	border-top: 4px rgb(120, 26, 0) solid;
 	box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.6) ;
 	text-shadow: 3px 3px 4px black;
-	border-radius: 15px;
+	overflow: auto;
+	min-width: 90%;
+	max-width: 90%;
+}
+footer
+{
+	color: greenyellow;
+	margin-bottom: 20px;
+	font-size: 1.2em;
+	width: 90%;
+	background-image: url("../images/scroll.webp");
+	background-position: 30% 30%;
+	background-attachment: scroll;
+	border-bottom: 4px rgb(120, 26, 0) solid;
+	border-right: 4px rgb(120, 26, 0) solid;
+	border-left: 4px rgb(120, 26, 0) solid;
+	box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.6) ;
+	text-shadow: 3px 3px 4px black;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+.title1
+{
+	margin-left: 5%;
+	width: 40%;
+	text-align: left;
+}
+.title2
+{
+	width: 44%;
+	text-align: right;
+}
+.textblock1
+{
+	display: inline-block;
+	margin-left: 5%;
+	width: 40%;
+	text-align: left;
+}
+.textblock2
+{
+	display: inline-block;
+	width: 50%;
+	text-align: right;
 }
 img
 {
@@ -92,6 +139,7 @@ h1
 	background-image: url("../images/bois.jpeg");
 	background-attachment: fixed;
 	text-decoration: underline;
+	text-align: center;
 	font-size: 3em;
 	font-style: oblique;
 	font-weight: bolder;
@@ -100,9 +148,10 @@ h1
 h2
 {
 	margin: auto;
-	margin-bottom: 10px;
 	width: 40%;
-	height: 40%;
+	min-width: 400px;
+	margin-bottom: 10px;
+	margin-top: 10px;
 	border-bottom: 8px brown groove;
 	border-right: 8px brown groove;
 	border-left: 8px rgb(225, 50, 50) groove;
@@ -115,7 +164,13 @@ h2
 	font-weight: bold;
 	color: rgb(206, 140, 55);
 }
-div strong
+h3
+{
+	display: inline-block;
+	text-decoration: underline;
+	font-style: italic;
+}
+footer strong
 {
 	color: rgb(165, 94, 0);
 }
@@ -147,5 +202,12 @@ a:focus
 } */
 nav a:visited
 {
-	color: rgb(170, 255, 0);
+	color: rgb(212, 133, 28);
+}
+
+.companions
+{
+	position: absolute;
+	right: 50%;
+	bottom: 50%;
 }
